@@ -1,0 +1,50 @@
+Questions asked:
+
+-What is a typical day (or week) like for you?
+-What kinds of problems do you deal with?
+-What kinds of decisions do you make?
+-What steps would you recommend I take to prepare to enter this field?
+-What advice would you give someone who is considering this type of job
+(or field)?
+
+
+Interviewed: Calvin Freese, full stack web developer
+
+A typical day -  
+In the mornings I check my email to stay on top of any communications I need to be aware of surrounding my code, infrastructure, and application security, etc. I also have a morning scrum meeting (or stand up, same thing). During scrum, my team members and I go over what we accomplished the previous day, any obstacles we faced, if we have any blockers on our current tasks, and what we plan to spend our day working on.   
+
+After scrum, I work on my tasks - Depending on the type of tasks, I have (implementation or analysis), I’ll either review documentation for a new third party feature to implement, or build out the functionality in my application. Typically the building part includes creating/modifying React components. I’ll also spend time reviewing fellow team member’s pull requests, make my own pull requests, merge in my code, and build out the deployment pipelines into a nonprod (but not local) environment where I can test my implementations with a valid, logged in user.   
+
+Occasionally, we have a defect task that comes up which involves troubleshooting to identify the root cause. In the same story we’ll also do any fixing that it requires. Debugging usually requires adding in logs to be viewed in AWS Cloudwatch, or testing API endpoints in postman to verify the data coming back is as expected.  
+
+If my task is considered “complete” from a dev perspective, I inform the quality engineer, and they’ll begin testing. Sometimes they give it the green light, other times I may have to tweak some stylings here or there, or maybe during testing a bug was found and I’ve got to revisit the functionality.  At the end of the day, I track my hours on my tasks in a tool called Rally. This is separate than standard time keeping though lol. It’s more like adding time to a JIRA board, or kanban board, etc.(Edited)
+
+
+A typical week -
+ More of the same, but sometimes we have meetings to groom user stories (ie, new features, etc). During grooming we have a chance to ask questions about the prototype or the acceptance criteria - if we (devs/quality engineers) deem that we have enough information to point out the story, we point it out which is pretty much stating how long we think the work will take. (I think each company has a different point system). Then the story goes from needing refinement to defined/groomed and can be added to a future sprint based on time requirements. If the story in question still needs more information, our product manager will kinda reach out to the necessary people to get that information and we’ll try and groom it again at a later date.  
+
+This is zoomed out a bit, but we typically do a production deployment around once a month - sometimes more for hot fixes, sometimes less due to corporate change freezes.
+View Calvin’s profileCalvin Freese
+Calvin Freese (He/Him)  9:11 PM
+Types of problems I deal with -
+My team is in the unique position where we manage a monorepo and the infrastructure for it - so we’re somewhat software developers AND devops. Any issue that goes on with our AWS infrastructure, we’re the point of contact for - issues could be from updating access keys and certificates, or migrating a Jenkins instance from OpenShift to Kubernetes due to changes in support requirements.  Any changes that the monorepo requires on a large scale (ie. Design patterns, languages in use, package updates) we’re responsible for.  
+
+Aside from infrastructure related issues, the code base I work in is primarily javascript (React), so I build components. Figuring out styling can be challenging, especially when it comes to making it dynamic. My company uses an in-house created component library, so sometimes the feature the business wants isn’t always supported in the Component Library, so I have to make requests for added functionality (or even style-variants) for a button or a modal for example.
+Decisions I make -  
+While we have design patterns set in place, I get to decide how I want to piece together a series of components to create the new feature. I decide how I want the state to be for that component, and create functions to support to changes, while keeping in mind readability and efficiency. Comments go a long way, especially for a complicated feature!
+Steps I recommend -  
+Until you land your first dev job, keep working on coding. It will be tempting to want to stray off and learn more and more different languages, but whatever one you start to really enjoy, stick with and excel at it. Build projects using the stack you like and are familiar with to gain experience and also to show off in future interviews.  
+
+Study up on data structures and algorithms, you might get the surprise question or two in an interview. It will help to be familiar with them later on as well when you need to iterate over arrays and objects.  
+
+Apply to positions when you meet 60% of the criteria. Tweak your resume to include the keywords from the position listing.
+Advice -
+ Everyone feels the imposter syndrome when starting out. Perhaps, even after working in the position for a year or more. The voice that tells you that you don’t know enough is a dirty, little liar. Every engineer googles stuff. I’m on MDN nearly every day looking at the methods and arguments for Arrays, or what properties are in an http request lol.   
+
+Become familiar and comfortable with googling and sifting through sites. (MDN, Stack Overflow, the dreaded w3schools).   
+
+Anything that you don’t feel super comfortable with right now in your coding knowledge - read up on, or find a tutorial, then try and do your own mini-project for it. Maybe it’s spinning up a React app without using create-react-app or something. Never stop learning. GraphQL is also super hot right now, so if your course didn’t run through that, I heavily advise it lol.  
+
+Maybe write down some notes for any team projects you worked on so you can speak on that for future interviews. Also make notes of any obstacles you faced, what you did to overcome them, and what you you’d do differently to avoid that situation (if applicable.  
+
+And finally, it’s ok to ask questions. I bug other devs when I can’t figure something out, and they bug me back when they’re stuck. Sometimes a fresh pair of eyes or ears is what it takes to make the resolution present itself.
